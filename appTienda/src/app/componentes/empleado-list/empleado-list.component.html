@@ -1,0 +1,23 @@
+<div class="col-md-4" *ngFor="let producto of productos">
+    <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            {{empelado.nombre}}
+            <button class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+            </button>
+        </div>
+        <img [src="empleado.imagen" width="300" height="230" alt="card-img-top">
+        <div class="card-body">
+            <p>{{empelado.rfc}}</p>
+            <p>{{empelado.paterno}}</p>
+            <p>{{empelado.materno}}</p>
+            <p>{{empelado.fechaNacimiento}}</p>
+            <a href="" class="btn btn-info btn-block">
+                editar empleado
+            </a>
+            <p>{{empelado.sexo}}</p>
+            <p>{{empelado.direccion}}</p>
+            <p>{{empelado.celular}}</p>
+        </div>
+    </div>
+</div>

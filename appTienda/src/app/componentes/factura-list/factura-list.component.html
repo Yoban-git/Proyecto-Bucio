@@ -1,0 +1,21 @@
+<div class="col-md-4" *ngFor="let producto of productos">
+    <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            {{empelado.folio}}
+            <button class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+            </button>
+        </div>
+        <img [src="factura.imagen" width="300" height="230" alt="card-img-top">
+        <div class="card-body">
+            <p>{{factura.fechaemi}}</p>
+            <p>{{factura.horaemi}}</p>
+            <p>{{factura.total}}</p>
+            <p>{{factura.codigo}}</p>
+            <a href="" class="btn btn-info btn-block">
+                editar factura
+            </a>
+            <p>{{factura.rfc}}</p>
+        </div>
+    </div>
+</div>
